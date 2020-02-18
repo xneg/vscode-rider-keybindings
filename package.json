@@ -1,0 +1,71 @@
+{
+    "name": "rider-keybindnigs",
+    "displayName": "Rider Keybindnigs",
+    "description": "Port of Rider Keybindings",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "cmd+ctrl+1",
+                "command": "workbench.action.terminal.toggleTerminal"
+            },
+            {
+                "key": "cmd+1",
+                "command": "workbench.view.explorer",
+                "when": "!explorerViewletFocus"
+            },
+            {
+                "key": "cmd+1",
+                "command": "workbench.action.toggleSidebarVisibility",
+                "when": "explorerViewletFocus"
+            },
+            {
+                "key": "cmd+5",
+                "command": "workbench.view.debug"
+            },
+            {
+                "key": "cmd+shift+k",
+                "command": "workbench.view.scm"
+            },
+            {
+                "key": "cmd+`",
+                "command": "workbench.action.switchWindow"
+            },
+            {
+                "key": "cmd+d",
+                "command": "editor.action.duplicateSelection"
+            },
+            {
+                "key": "cmd+l",
+                "command": "editor.action.deleteLines"
+            },
+            {
+                "key": "cmd+p",
+                "command": "editor.action.triggerParameterHints"
+            },
+            {
+                "key": "cmd+-",
+                "command": "workbench.action.navigateBack"
+            },
+            {
+                "key": "cmd+shift+-",
+                "command": "workbench.action.navigateForward"
+            },
+            {
+                "key": "escape",
+                "command": "workbench.action.navigateLast"
+            },
+            {
+                "key": "cmd+f4",
+                "command": "workbench.action.closeWindow",
+                "when": "!editorIsOpen && !multipleEditorGroups"
+            }
+        ]
+    }
+}
