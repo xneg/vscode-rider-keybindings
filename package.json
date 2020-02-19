@@ -11,9 +11,35 @@
     ],
     "contributes": {
         "keybindings": [
+            // working
             {
                 "key": "cmd+ctrl+1",
                 "command": "workbench.action.terminal.toggleTerminal"
+            },
+            {
+                "key": "cmd+d",
+                "command": "editor.action.duplicateSelection"
+            },
+            {
+                "key": "cmd+l",
+                "command": "editor.action.deleteLines"
+            },
+            {
+                "key": "cmd+k",
+                "command": "workbench.view.scm"
+            },
+            {
+                "key": "cmd+-",
+                "command": "workbench.action.navigateBack"
+            },
+            {
+                "key": "cmd+shift+-",
+                "command": "workbench.action.navigateForward"
+            },
+            {
+                "key": "f2",
+                "command": "renameFile",
+                "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
             },
             {
                 "key": "cmd+1",
@@ -26,36 +52,25 @@
                 "when": "explorerViewletFocus"
             },
             {
-                "key": "cmd+5",
-                "command": "workbench.view.debug"
+                "key": "cmd+4",
+                "command": "workbench.action.output.toggleOutput"
             },
             {
-                "key": "cmd+shift+k",
-                "command": "workbench.view.scm"
+                "key": "cmd+5",
+                "command": "workbench.debug.action.toggleRepl"
+            },
+            // in progress
+            {
+                "key": "cmd+3",
+                "command": "workbench.action.findInFiles"
             },
             {
                 "key": "cmd+`",
                 "command": "workbench.action.switchWindow"
             },
             {
-                "key": "cmd+d",
-                "command": "editor.action.duplicateSelection"
-            },
-            {
-                "key": "cmd+l",
-                "command": "editor.action.deleteLines"
-            },
-            {
                 "key": "cmd+p",
                 "command": "editor.action.triggerParameterHints"
-            },
-            {
-                "key": "cmd+-",
-                "command": "workbench.action.navigateBack"
-            },
-            {
-                "key": "cmd+shift+-",
-                "command": "workbench.action.navigateForward"
             },
             {
                 "key": "escape",
