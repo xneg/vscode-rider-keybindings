@@ -72,16 +72,21 @@
                 "key": "cmd+f4",
                 "command": "workbench.action.closeActiveEditor"
             },
-            // in progress
-            {
-                "key": "escape",
-                "command": "workbench.action.focusActiveEditorGroup"
-            },
             {
                 "key": "cmd+b",
                 "command": "editor.action.revealDefinition",
                 "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
             },
+            {
+                "key": "enter",
+                "command": "filesExplorer.openFilePreserveFocus",
+                "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+            },
+            {
+                "key": "escape",
+                "command": "workbench.action.focusLastEditorGroup"
+            },
+            // in progress
             {
                 "key": "cmd+alt+b",
                 "command": "editor.action.goToImplementation",
