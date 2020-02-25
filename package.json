@@ -86,7 +86,19 @@
                 "key": "escape",
                 "command": "workbench.action.focusLastEditorGroup"
             },
+            {
+                "key": "cmd+shift+s",
+                "command": "workbench.action.files.saveAll"
+            },
             // in progress
+            {
+                "key": "cmd+shift+n",
+                "command": "explorer.newFile"
+            },
+            {
+                "key": "shift+cmd+a",
+                "command": "workbench.action.showCommands"
+            },
             {
                 "key": "cmd+alt+b",
                 "command": "editor.action.goToImplementation",
@@ -108,10 +120,6 @@
                 "key": "cmd+p",
                 "command": "editor.action.triggerParameterHints"
             }
-            // ,{
-            //     "key": "escape",
-            //     "command": "workbench.action.navigateLast"
-            // }
         ]
     }
 }
