@@ -90,7 +90,6 @@
                 "key": "cmd+shift+s",
                 "command": "workbench.action.files.saveAll"
             },
-            // in progress
             {
                 "key": "cmd+shift+n",
                 "command": "explorer.newFile"
@@ -98,6 +97,12 @@
             {
                 "key": "shift+cmd+a",
                 "command": "workbench.action.showCommands"
+            },
+            // in progress
+            { 
+                "key": "alt+enter", 
+                "command": "editor.action.quickFix",
+                "when": "editorTextFocus" 
             },
             {
                 "key": "cmd+alt+b",
